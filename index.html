@@ -1,154 +1,88 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Aplicaciones | Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #0b0f19;
-    color: #e2e8f0;
-    line-height: 1.5;
-}
+    <header>
+        <h1>Mis Aplicaciones Desarrolladas</h1>
+        <p>Herramientas tecnológicas creadas para apoyar el ministerio y la gestión eclesiástica.</p>
+    </header>
 
-header {
-    text-align: center;
-    padding: 50px 20px 30px 20px;
-    background-color: #111827;
-    border-bottom: 1px solid #1f2937;
-}
+    <main class="contenedor-apps">
 
-header h1 {
-    font-size: 2.2rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
+        <!-- App 1: Ministerio Infantil -->
+        <article class="tarjeta-app">
+            <div class="contenedor-imagen">
+                <img src="ministerio-infantil.png" alt="Captura Ministerio Infantil" class="imagen-preview">
+            </div>
+            <div class="contenido-tarjeta">
+                <span class="badge">App 1</span>
+                <h2>Ministerio Infantil</h2>
+                <p>Plataforma interactiva y autónoma para la organización de turnos, clases, lecciones y recursos de los maestros.</p>
+                <ul class="lista-features">
+                    <li>Gestión de domingos por meses</li>
+                    <li>Control por grupos de edad y roles</li>
+                    <li>Modo coordinador protegido</li>
+                </ul>
+                <div class="botones">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Supabase</span>
+                </div>
+            </div>
+        </article>
 
-header p {
-    color: #9ca3af;
-    font-size: 1.1rem;
-}
+        <!-- App 2: Portal Congregacional -->
+        <article class="tarjeta-app">
+            <div class="contenedor-imagen">
+                <img src="portal-congregacional.png" alt="Captura Portal Congregacional" class="imagen-preview">
+            </div>
+            <div class="contenido-tarjeta">
+                <span class="badge">App 2</span>
+                <h2>Portal Congregacional</h2>
+                <p>Aplicación multisede integral para la administración eclesiástica, transmisiones en vivo, red de oración y finanzas.</p>
+                <ul class="lista-features">
+                    <li>Sedes y Modo Proyector</li>
+                    <li>Red de oración interactiva</li>
+                    <li>Control de accesos y tesorería</li>
+                </ul>
+                <div class="botones">
+                    <span class="tech-tag">Multisede</span>
+                    <span class="tech-tag">Tiempo Real</span>
+                </div>
+            </div>
+        </article>
 
-.contenedor-apps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
+        <!-- App 3: SoundTeam Pro -->
+        <article class="tarjeta-app">
+            <div class="contenedor-imagen">
+                <img src="soundteam.png" alt="Captura SoundTeam Pro" class="imagen-preview">
+            </div>
+            <div class="contenido-tarjeta">
+                <span class="badge">App 3</span>
+                <h2>SoundTeam Pro</h2>
+                <p>Herramienta profesional para equipos de alabanza y músicos que gestiona repertorios, setlists y modo teleprompter.</p>
+                <ul class="lista-features">
+                    <li>Transposición automática de acordes</li>
+                    <li>Modo Escenario / Teleprompter y BPM</li>
+                    <li>Gestión por sedes e inicio de sesión</li>
+                </ul>
+                <div class="botones">
+                    <span class="tech-tag">Músicos</span>
+                    <span class="tech-tag">Setlists</span>
+                </div>
+            </div>
+        </article>
 
-.tarjeta-app {
-    background-color: #111827;
-    border: 1px solid #1f2937;
-    border-radius: 16px;
-    width: 350px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
+    </main>
 
-.tarjeta-app:hover {
-    transform: translateY(-5px);
-    border-color: #00ffcc;
-}
+    <footer>
+        <p>&copy; 2026 - Proyectos alojados 100% gratis en GitHub Pages.</p>
+    </footer>
 
-.contenedor-imagen {
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-    background-color: #05070d; /* Fondo oscuro elegante alrededor de la captura */
-    border-bottom: 1px solid #1f2937;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.imagen-preview {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Muestra la imagen completa sin recortarla */
-}
-
-.contenido-tarjeta {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.badge {
-    display: inline-block;
-    align-self: flex-start;
-    background-color: #1f2937;
-    color: #00ffcc;
-    font-size: 0.75rem;
-    font-weight: bold;
-    padding: 4px 10px;
-    border-radius: 12px;
-    border: 1px solid #00ffcc;
-    margin-bottom: 12px;
-}
-
-.tarjeta-app h2 {
-    font-size: 1.4rem;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.tarjeta-app p {
-    color: #9ca3af;
-    font-size: 0.95rem;
-    margin-bottom: 16px;
-}
-
-.lista-features {
-    list-style: none;
-    margin-bottom: 20px;
-    flex: 1;
-}
-
-.lista-features li {
-    font-size: 0.9rem;
-    color: #cbd5e1;
-    margin-bottom: 8px;
-    position: relative;
-    padding-left: 18px;
-}
-
-.lista-features li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #00ffcc;
-    font-weight: bold;
-}
-
-.botones {
-    display: flex;
-    gap: 8px;
-    margin-top: auto;
-}
-
-.tech-tag {
-    background-color: #1f2937;
-    color: #9ca3af;
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 6px 12px;
-    border-radius: 6px;
-    border: 1px solid #374151;
-}
-
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    color: #6b7280;
-    font-size: 0.9rem;
-    border-top: 1px solid #1f2937;
-    margin-top: 40px;
-}
+</body>
+</html>

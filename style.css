@@ -58,17 +58,20 @@ header p {
 
 .contenedor-imagen {
     width: 100%;
-    height: 190px;
+    height: 220px;
     overflow: hidden;
-    background-color: #000000;
+    background-color: #05070d; /* Fondo oscuro elegante alrededor de la captura */
     border-bottom: 1px solid #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 .imagen-preview {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: top center;
+    object-fit: contain; /* Muestra la imagen completa sin recortarla */
 }
 
 .contenido-tarjeta {
