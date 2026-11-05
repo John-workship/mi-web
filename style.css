@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #0d1117;
+    color: white;
+    padding: 40px 20px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #238636;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #2ea043;
+}
+
+footer {
+    background-color: #e1e4e8;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
