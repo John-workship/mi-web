@@ -13,37 +13,36 @@ body {
 
 header {
     text-align: center;
-    padding: 60px 20px 40px 20px;
+    padding: 50px 20px 30px 20px;
     background-color: #111827;
     border-bottom: 1px solid #1f2937;
 }
 
 header h1 {
-    font-size: 2.8rem;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
     color: #ffffff;
     margin-bottom: 12px;
 }
 
 header p {
     color: #9ca3af;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
+/* Grilla adaptable automática */
 .contenedor-apps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    max-width: 1400px; /* Ampliado para aprovechar pantallas de PC */
-    margin: 50px auto;
-    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
 }
 
 .tarjeta-app {
     background-color: #111827;
     border: 1px solid #1f2937;
     border-radius: 18px;
-    width: 380px; /* Tarjetas más anchas y cómodas */
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -58,7 +57,7 @@ header p {
 
 .contenedor-imagen {
     width: 100%;
-    height: 250px; /* Imagen más alta para lucir mejor en PC */
+    height: 240px;
     overflow: hidden;
     background-color: #05070d;
     border-bottom: 1px solid #1f2937;
@@ -75,7 +74,7 @@ header p {
 }
 
 .contenido-tarjeta {
-    padding: 28px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -95,14 +94,14 @@ header p {
 }
 
 .tarjeta-app h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 12px;
 }
 
 .tarjeta-app p {
     color: #9ca3af;
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-bottom: 18px;
 }
 
