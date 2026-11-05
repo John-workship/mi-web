@@ -1,8 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px 30px 20px;
+    background-color: #111827;
+    border-bottom: 1px solid #1f2937;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #9ca3af;
+    font-size: 1.1rem;
+}
+
+.contenedor-apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.tarjeta-app {
+    background-color: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    width: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tarjeta-app:hover {
+    transform: translateY(-5px);
+    border-color: #00ffcc;
+}
+
+.contenedor-imagen {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    background-color: #000000;
+    border-bottom: 1px solid #1f2937;
+}
+
 .imagen-preview {
     width: 100%;
-    height: 180px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #30363d;
+    object-position: top center;
+}
+
+.contenido-tarjeta {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.badge {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #1f2937;
+    color: #00ffcc;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid #00ffcc;
+    margin-bottom: 12px;
+}
+
+.tarjeta-app h2 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.tarjeta-app p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+.lista-features {
+    list-style: none;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.lista-features li {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 18px;
+}
+
+.lista-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+.botones {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.tech-tag {
+    background-color: #1f2937;
+    color: #9ca3af;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #374151;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6b7280;
+    font-size: 0.9rem;
+    border-top: 1px solid #1f2937;
+    margin-top: 40px;
 }
