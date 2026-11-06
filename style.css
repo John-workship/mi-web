@@ -13,40 +13,41 @@ body {
 
 header {
     text-align: center;
-    padding: 50px 20px 30px 20px;
+    padding: 60px 20px 40px 20px;
     background-color: #111827;
     border-bottom: 1px solid #1f2937;
 }
 
 header h1 {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
     color: #ffffff;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 header p {
     color: #9ca3af;
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(1.1rem, 1.8vw, 1.35rem);
 }
 
-/* Grilla adaptable automática */
+/* Grilla que expande las 3 tarjetas en PC */
 .contenedor-apps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    width: 90%;
-    max-width: 1400px;
-    margin: 40px auto;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 35px;
+    width: 95%;
+    max-width: 1500px;
+    margin: 50px auto;
+    padding: 0 20px;
 }
 
 .tarjeta-app {
     background-color: #111827;
     border: 1px solid #1f2937;
-    border-radius: 18px;
+    border-radius: 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.65);
     transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
@@ -57,14 +58,14 @@ header p {
 
 .contenedor-imagen {
     width: 100%;
-    height: 240px;
+    height: 270px; /* Imagen más amplia */
     overflow: hidden;
     background-color: #05070d;
     border-bottom: 1px solid #1f2937;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px;
+    padding: 16px;
 }
 
 .imagen-preview {
@@ -74,7 +75,7 @@ header p {
 }
 
 .contenido-tarjeta {
-    padding: 24px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -85,38 +86,38 @@ header p {
     align-self: flex-start;
     background-color: #1f2937;
     color: #00ffcc;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: bold;
-    padding: 5px 12px;
-    border-radius: 12px;
+    padding: 6px 14px;
+    border-radius: 14px;
     border: 1px solid #00ffcc;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .tarjeta-app h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #ffffff;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .tarjeta-app p {
     color: #9ca3af;
-    font-size: 0.95rem;
-    margin-bottom: 18px;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
 }
 
 .lista-features {
     list-style: none;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     flex: 1;
 }
 
 .lista-features li {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #cbd5e1;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     position: relative;
-    padding-left: 20px;
+    padding-left: 24px;
 }
 
 .lista-features li::before {
@@ -136,10 +137,10 @@ header p {
     display: inline-block;
     background-color: #00ffcc;
     color: #0b0f19;
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: bold;
-    padding: 12px 20px;
-    border-radius: 10px;
+    padding: 14px 22px;
+    border-radius: 12px;
     text-decoration: none;
     text-align: center;
     width: 100%;
@@ -153,9 +154,9 @@ header p {
 
 footer {
     text-align: center;
-    padding: 40px 20px;
+    padding: 45px 20px;
     color: #6b7280;
-    font-size: 0.95rem;
+    font-size: 1rem;
     border-top: 1px solid #1f2937;
     margin-top: 60px;
 }
