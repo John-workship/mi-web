@@ -9,3 +9,17 @@
 @media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:70px;gap:15px}.hero-art{height:300px;max-width:560px;width:100%;margin:auto}.apps-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.app-card:last-child{grid-column:1/-1}.app-card:last-child .app-visual{height:230px}.app-card:last-child .app-content p{min-height:auto}.approach-section{margin-left:28px;margin-right:28px;gap:30px}.footer{margin-left:28px;margin-right:28px}}
 @media(max-width:620px){.topbar{height:68px;padding:0 19px}.nav-links{gap:15px;font-size:11px}.nav-links>a:first-child{display:none}.nav-cta{padding:8px 11px}.hero{padding:62px 21px 50px;min-height:0}.hero h1{font-size:47px;letter-spacing:-2px}.hero-description{font-size:15px}.hero-actions{align-items:flex-start;flex-direction:column;gap:17px}.hero-note{margin-top:30px}.hero-art{height:270px;transform:scale(.88);transform-origin:center}.panel-front{left:0}.panel-back{right:0}.chip-one{left:0}.chip-two{right:0}.apps-section{padding:45px 19px 65px}.section-heading{display:block}.section-heading>p{margin-top:14px}.apps-grid{grid-template-columns:1fr;gap:15px}.app-card:last-child{grid-column:auto}.app-visual,.app-card:last-child .app-visual{height:205px}.app-content p{min-height:0}.app-content{padding:20px}.image-note{text-align:left;line-height:1.6}.approach-section{margin:0 19px 65px;padding:27px 22px;grid-template-columns:1fr;gap:27px}.approach-intro h2{font-size:34px}.footer{margin:0 19px;padding:24px 0;gap:12px}.footer p{flex-basis:100%;order:3}.footer small{order:4}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Capturas reales de las aplicaciones */
+.app-visual img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  max-height:145px;
+  height:auto;
+  object-fit:contain;
+  border-radius:9px;
+  background:#080d18;
+  box-shadow:0 14px 30px #0008;
+}
+.app-visual{padding:38px 18px 20px}
